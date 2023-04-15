@@ -171,7 +171,7 @@ header nav ul{
     text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
 }
   /*SECCION 3*/
-  .primera-seccion  {
+  #contacto  {
     text-align: center;
     margin: 9% auto 0;
     width: 60%;
@@ -340,8 +340,8 @@ footer{
 .btn.btn-raised.btn-primary {
   background-color: #00838F!important;
   font-size: 16px;
-  width: 100%;
-  padding: 15px;
+  width: 50%;
+  padding: auto;
 }
 
 
@@ -370,9 +370,11 @@ footer{
   -webkit-box-shadow: 0px 21px 46px -15px rgba(0,0,0,1);
   -moz-box-shadow: 0px 21px 46px -15px rgba(0,0,0,1);
   box-shadow: 0px 21px 46px -15px rgba(0,0,0,1);
+  padding: 20px 20px 20px 20px ;
+ 
 }
 .contenido-formulario {
-  margin-top: 30px;
+  margin-top: 40px 40px 40px 40px;
 }
 #cargando {
   text-align: center;
