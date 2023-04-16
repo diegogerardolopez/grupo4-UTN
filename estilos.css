@@ -77,6 +77,7 @@ header nav ul{
   align-items: center;
   color: rgba(238, 243, 238, 0.856);
   border-color: rgba(238, 243, 238, 0.856);
+  box-shadow: 5px 5px rgba(0,0,0,0.5);
 }
 
 #btn-buscar a:hover{
@@ -171,92 +172,73 @@ header nav ul{
     text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
 }
   /*SECCION 3*/
-  #contacto  {
+  #cotizacion{
+    height: 100vh;
+  }
+  #cotizar {
+    background-image: url("./imagenes/agnecia.png");
+    background-size: cover;
     text-align: center;
     margin: 9% auto 0;
-    width: 60%;
-    padding: 10px;
-    box-shadow:rgb(7, 54, 76);
-    height: 100vh;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    height: 90%;
+    align-items: center;
 }
-.btncotizar {
-  align-items: center;
-  color: rgba(16, 224, 16, 0.856);
-  border-color: rgba(15, 16, 15, 0.856);
-
+#boton-cotiza{
+  width: 40%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 5px 5px rgba(0,0,0,0.5);
 }
-.primera-seccion h2 {
+#cotizar h3 {
     text-transform: uppercase;
-    color: #a40f0f;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow: #7a7a7a;
 }
-.Marca{
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+#cotizar label {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Helvetica;
+  text-shadow: #7a7a7a;
 }
-.form.side {
-    width: 50%;
-    margin-top: 2%;
+#anio{
+  width: 50%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 5px 5px rgba(0,0,0,0.5);
 }
-.form-side form#form-search {
-    display: flex;
-    flex-direction: column;
+#marca{
+  width: 50%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 5px 5px rgba(0,0,0,0.5);
 }
-.div-imagen-fondo {
-  background-image: url(./imagenes/auto\ pared.png);
-  height: 220px;
-  width: 100%;
-  background-size: cover;
+#total{
+  width: 80%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 5px 5px rgba(0,0,0,0.5);
+  background-color: rgba(90, 236, 90, 0.938);
+  font-size: 20px;
+  color: white;
+}
 
-background-position: center;
-}
-.cotizar-section{
 
-    width: 200px;
-    height: 50px;
-    background: red;
-    margin: 0 auto;
-  
-}
 
-.form-side #form-search select {
-    font-size: inherit;
-    margin: 8px 0px 7px;
-    background-color: rgb(129, 129, 132);
-    padding: 8px 5px;
-    border-radius: 7px;
-    border: solid 1px #534e69;
-    color: #770202;
-}
-.input[type="submit"] {
-    margin: 9px auto 0px;
-    width: 70%;
-    color: cadetblue;
-    background-color: #00a478;
-    border: solid 0px #ada2a2;
-    border-radius: 4px;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 7px 3px;
-    color: #FFF;
-    height: 37px;
-
-}
-.input[type="submit"]:hover {
-    color: #00a478;
-    background-color: #fff;
-    border: solid 2px #00a478;
-}
 .error {
     color: red;
 }
-.display-info p span{
-    font-weight: 700;
-}
-.display-info .main-price{
-    font-size: 28px;
-    margin-bottom: 2px;
-}
+
   
 /*FOOTER*/
 footer{
@@ -358,7 +340,7 @@ footer{
   background-color: #7a7a7a;
 }
 
-/*FORMULARIO COTIZADOR*/
+/*FORMULARIO COTIZADOR
 .btn.btn-raised.btn-primary {
   background-color: #00838F!important;
   font-size: 16px;
@@ -423,4 +405,4 @@ footer{
   padding: 10px;
   text-transform: uppercase;
   font-weight: bold;
-}
+}*/

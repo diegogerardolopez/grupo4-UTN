@@ -1,4 +1,8 @@
-const cotizar = () => {
+
+
+
+document.addEventListener("DOMContentLoaded", 
+cotizar = () => {
     const brand = document.getElementById("marca").value;
     const year = document.getElementById("anio").value;
     let value;
@@ -43,5 +47,14 @@ const cotizar = () => {
             break;
     }
     const message = `El valor del auto marca ${brand} del año ${year} es de : $ ${value}`;
-    document.getElementById("cotizacion").textContent = message;
-};
+    ////document.getElementById("cotizacion").textContent = message;
+    // Obtenemos la referencia del label donde vamos a imprimir el resultado
+  var label = document.getElementById('total');
+  // Accedemos a su text para plasmar lo que necesitamos.
+  label.innerText = message;
+    
+});
+
+
+
+

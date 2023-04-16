@@ -22,7 +22,7 @@
             <ul id="navul">
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#autos">NOVEDADES</a></li>
-                <li><a href="#contacto">COTIZADOR</a></li>
+                <li><a href="#cotizacion">COTIZADOR</a></li>
             </ul>
         </nav>
         <div>
@@ -129,70 +129,38 @@
                 </div>
             </div>   
         </div>
-        
-    
-    <section class="main-section">
-
-        <div class="div-imagen-fondo">
-          <h3> <center> Cotizador de Autos Usados</center></h3>
-        </div>
-        <div class="select-section">
-            <div class="select-side">
-                <div class="select-container">
-
-                    
-                    <label for="marca">Marca:</label><br>
-                    <select id="marca" name="marca">
-                        <option value="">--Marca--</option>
-                        <option value="Peugeot">Peugeot</option>
-                        <option value="Renault">Renault</option>
-                        <option value="Toyota">Toyota</option>
-                        <option value="Audi">Audi</option>
-                        <option value="Honda">Honda</option>
-                    </select>
-                </div>
-            </div>
-
-            <
-            <div class="select-side">
-                <div class="select-container">
-
-                    
-                    <label for="anio">Año:</label><br>
-                    <select id="anio" name="anio">
-                        <option value="">--Año--</option>
-                        <option value="2022">2022</option>
-                        <option value="2021">2021</option>
-                        <option value="2020">2020</option>
-                        <option value="2019">2019</option>
-                        <option value="2018">2018</option>
-                        <option value="2017">2017</option>
-                        <option value="2016">2016</option>
-                        <option value="2015">2015</option>
-                        <option value="2014">2014</option>
-                    </select>
-                </div>
+        <div class="container" id="cotizacion">
+            <div class="card" id="cotizar">
+                <h3>Cotizador de Autos Usados</h3>
+                        <label for="marca">Marca:</label><br>
+                        <select id="marca" name="marca">
+                            <option value="">--Marca--</option>
+                            <option value="Peugeot">Peugeot</option>
+                            <option value="Renault">Renault</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Audi">Audi</option>
+                            <option value="Honda">Honda</option>
+                        </select>
+                            
+                        <label for="anio">Año:</label><br>
+                        <select id="anio" name="anio">
+                            <option value="">--Año--</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                        </select>
+                            <button onclick="cotizar(2019)" class="btn btn-primary" id="boton-cotiza">Cotizar</button>
+                <label id="total"></label>
             </div>
         </div>
-
-        
-        <div class="cotizar-section">
-            <button onclick="cotizar(2019)" class="cotizar-button">Cotizar</button>
-        </div>
-
-   
-        <div id="cotizacion"></div>
-    </section>
-
-    
-   
-
-
-                   
-        </section>
     </main>
     <footer>
-
         <div class="footer-container">
             <div class="footer-box">
                 <div class="h1-footer">
