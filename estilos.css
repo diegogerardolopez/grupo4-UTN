@@ -202,15 +202,23 @@ header nav ul{
     display: flex;
     flex-direction: column;
 }
-  
-.select-side {
-    background-image: url(./imagenes/auto\ pared.png);
-    height: 220px;
-    width: 100%;
-    background-size: cover;
+.div-imagen-fondo {
+  background-image: url(./imagenes/auto\ pared.png);
+  height: 220px;
+  width: 100%;
+  background-size: cover;
 
-  background-position: center;
+background-position: center;
 }
+.cotizar-section{
+
+    width: 200px;
+    height: 50px;
+    background: red;
+    margin: 0 auto;
+  
+}
+
 .form-side #form-search select {
     font-size: inherit;
     margin: 8px 0px 7px;
