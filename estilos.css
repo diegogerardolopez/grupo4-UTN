@@ -32,17 +32,24 @@ header{
 
 }
 
+.logo-auto{
+  padding: 0px;
+}
 .auto{
   width: 80px;
   height: 80px;
 }
 header h1{
-    color: #7a7a7a;
-    font-family: 'Roboto Slab', serif;
-    font-size: 15px;
+    color: #e2dada;
     text-align: center;
-    font-weight: 700;
-}
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow: 0 1px 0 #141313, 0 2px 0 #1a1818, 0 3px 0 #353131, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+    margin: 5px;
+    padding-left: 10px;
+  }
+
 
 header nav ul{
     list-style: none;
@@ -92,12 +99,14 @@ header nav ul{
 
   /*MAIN*/
 
-  
+  .carousel, .carousel-inner {
+    height: 100vh;
+  }
 
   .carousel-caption{
     position:relative;
-    top: 10px;
-    right: 20px;
+    top: 5px;
+    
   }
 
   .h5-carousel{
@@ -137,6 +146,7 @@ header nav ul{
   
   .card{
     background-color: #7a7a7a;
+    border-color: #667c3e;
   }
 
   .texto-encima{
@@ -161,13 +171,19 @@ header nav ul{
     text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
 }
   /*SECCION 3*/
-  .primera-seccion  {
+  #contacto  {
     text-align: center;
     margin: 9% auto 0;
     width: 60%;
     padding: 10px;
     box-shadow:rgb(7, 54, 76);
     height: 100vh;
+}
+.btncotizar {
+  align-items: center;
+  color: rgba(16, 224, 16, 0.856);
+  border-color: rgba(15, 16, 15, 0.856);
+
 }
 .primera-seccion h2 {
     text-transform: uppercase;
@@ -186,13 +202,14 @@ header nav ul{
     display: flex;
     flex-direction: column;
 }
-.imagen-side {
+  
+.select-side {
     background-image: url(./imagenes/auto\ pared.png);
     height: 220px;
     width: 100%;
     background-size: cover;
-    
-    background-position: center;
+
+  background-position: center;
 }
 .form-side #form-search select {
     font-size: inherit;
@@ -243,8 +260,8 @@ footer{
 .footer-container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
+  justify-content: space-around;
+  max-width: 100%;
   margin: aut;
   margin-top: 10px;
  
@@ -253,12 +270,14 @@ footer{
   display: flex;
   flex-direction: column;
   padding: 20px;
+  align-items: center;
 }
 
 .h1-footer{
   margin-bottom: 30px;
   color: #424040;
   font-size: 40px;
+  align-items: center;
   font-weight: bold;
   font-family: Helvetica;
   text-shadow: 0 1px 0 #141313, 0 2px 0 #1a1818, 0 3px 0 #353131, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
@@ -270,17 +289,20 @@ footer{
   color: #7a7a7a;
   font-weight: 700;
   font-size: 20px;
+  align-items: center;
 }
 
 .footer-box .logo{
   width: auto;
   height: auto;
+  align-items: center;
 }
 
 .footer-box .descripcion{
   max-width: 200px;
   margin-top: 10px;
   font-weight: 500;
+  align-items: center;
   color: #7a7a7a;
   font-size: 20px;
 }
@@ -289,11 +311,13 @@ footer{
   margin-top: 10px;
   color: #7a7a7a;
   font-weight: 600;
+  align-items: center;
 }
 
 .footer-box a{
   margin-top: 10px;
   color: #7a7a7a;
+  align-items: center;
   font-weight: 600;
   text-decoration: none;
 }
@@ -324,4 +348,71 @@ footer{
   border: none;
   height: 1px;
   background-color: #7a7a7a;
+}
+
+/*FORMULARIO COTIZADOR*/
+.btn.btn-raised.btn-primary {
+  background-color: #00838F!important;
+  font-size: 16px;
+  width: 50%;
+  padding: auto;
+}
+
+
+.error {
+  background-color: #FBE9E7;
+  border: 1px solid #F4511E;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #F4511E;
+}
+.correcto {
+  background-color: rgb(211, 249, 187);
+  border: 1px solid rgb(50, 167, 0);
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(4, 150, 50);
+}
+.error p {
+  margin:0;
+}
+#contenido {
+  margin-top: 60px;
+  background-color: white;
+  -webkit-box-shadow: 0px 21px 46px -15px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 21px 46px -15px rgba(0,0,0,1);
+  box-shadow: 0px 21px 46px -15px rgba(0,0,0,1);
+  padding: 20px 20px 20px 20px ;
+ 
+}
+.contenido-formulario {
+  margin-top: 40px 40px 40px 40px;
+}
+#cargando {
+  text-align: center;
+}
+#cargando img {
+  display: none;
+  margin: 0 auto;
+}
+#resultado  {
+  margin-bottom: 40px;
+}
+#resultado div {
+  border: 1px solid #26C6DA;
+  text-align: center;
+  padding: 0  0 20px 0;
+}
+#resultado div p {
+  margin-bottom: 0;
+}
+#resultado div p.header {
+  background-color: #26C6DA;
+  margin-bottom: 10px;
+  color:white;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
