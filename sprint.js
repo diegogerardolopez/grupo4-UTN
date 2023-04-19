@@ -1,8 +1,8 @@
 
 
-
-document.addEventListener("DOMContentLoaded", 
-cotizar = () => {
+cotiza = document.getElementById("cotizar");
+cotizar.addEventListener("click", 
+() => {
     const brand = document.getElementById("marca").value;
     const year = document.getElementById("anio").value;
     let value;
@@ -49,11 +49,30 @@ cotizar = () => {
     const message = `El valor del auto marca ${brand} del año ${year} es de : $ ${value}`;
     ////document.getElementById("cotizacion").textContent = message;
     // Obtenemos la referencia del label donde vamos a imprimir el resultado
-  var label = document.getElementById('total');
+  /*var label = document.getElementById('total');*/
   // Accedemos a su text para plasmar lo que necesitamos.
-  label.innerText = message;
+  /*label.innerText = message;*/
+  console.log(message);
+  var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+    var alertTrigger = document.getElementById('liveAlertBtn')
+
+function alert(message, type) {
+  var wrapper = document.createElement('div')
+  wrapper.innerHTML = '<div class="alert alert-info alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+
+  alertPlaceholder.append(wrapper)
+}
+
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', function () {
+    alert(message)
+  })
+} 
+  
     
 });
+
+
 
 
 
